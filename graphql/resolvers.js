@@ -1,14 +1,14 @@
-const babooteng2 = {
-    name: "babooteng2",
-    age: 18,
-    gender: "female"
-}
+import { getById, people } from "./db";
 
 const resolvers = {
-    Query: {
-        name: () => "babooteng2",
-        person: () => babooteng2
-    }
+  Query: {
+    people: () => people,
+    person: (id) => getById(id),
+  },
 };
 
 export default resolvers;
+
+/* 
+    ctrl + enter : playground 재생버튼
+*/
