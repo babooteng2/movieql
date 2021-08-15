@@ -1,16 +1,13 @@
-import { getById, people } from "./db";
+import { addMovie, getById, getMovies } from "./db";
 
 const resolvers = {
   Query: {
-    people: () => people,
-    person: (_, { id }) => getById(id),
+    movies: () => getMovies(),
+    movie: (_, { id }) => getById(id),
+  },
+  Mutation: {
+    addMovie: (_, { name, score }) => addMovie(name, score),
   },
 };
 
 export default resolvers;
-
-/* 
-    ctrl + enter : playground 재생버튼
-    resolver: (root, args, context, info)
-    https://graphql.org/learn/execution/#root-fields-resolvers
-*/

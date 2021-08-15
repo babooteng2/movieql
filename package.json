@@ -9,7 +9,7 @@
     "graphql-yoga": "^1.18.3"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "nodemon -L --delay 5 --exec babel-node index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
