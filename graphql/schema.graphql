@@ -11,5 +11,7 @@ type Movie {
 }
 
 type Query {
+  suggestions(id: Int!): [Movie]!
+  movie(id: Int!): Movie!
   movies(limit: Int, rating: Float): [Movie]!
 }
