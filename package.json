@@ -6,7 +6,8 @@
   "author": "babooteng2<babooteng2@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "graphql-yoga": "^1.18.3"
+    "graphql-yoga": "^1.18.3",
+    "node-fetch": "^2.6.1"
   },
   "scripts": {
     "start": "nodemon -L --delay 5 --exec babel-node index.js"
