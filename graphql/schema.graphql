@@ -3,11 +3,13 @@ type Movie {
   title: String!
   score: Int!
   year: Int
-  rating: Float!
-  language: String!
+  rating: Float
+  language: String
   summary: String!
   medium_cover_image: String!
   state: String!
+  description_intro: String
+  genres: [String]
 }
 
 type Query {
